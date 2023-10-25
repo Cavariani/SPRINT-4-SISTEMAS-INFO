@@ -1,0 +1,361 @@
+/* ========== VARIÁVEIS ========== */
+:root {
+    --primary-color: #2935d1;
+    --secondary-color: #e3e3e3;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+/* ========== BORDAS E ARREDONDAMENTOS ========== */
+.border-rounded {
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* ========== ANIMAÇÕES ========== */
+@keyframes pulseUnderline2 {
+    0% {
+        width: 0;
+        left: 50%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* ========== TÍTULOS E LEGENDAS ========== */
+.caption-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: darkblue;
+    animation: pulseUnderline2 2s forwards;
+}
+
+.txt-title {
+    font-size: 3.5rem;
+}
+
+/* ========== BOTÕES ========== */
+.btn-ac-center {
+    display: block;
+}
+
+
+
+.silver-btn:not(.collapsed),
+.gold-btn:not(.collapsed),
+.platinum-btn:not(.collapsed),
+.btn-proje:not(.collapsed) {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.silver-btn:not(.collapsed) {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+.btn-proje {
+    color: #ffffff6c;
+    font-size: 1rem;
+}
+
+.btn-proje:not(.collapsed) {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.gold-btn:not(.collapsed) {
+    background-color: #ffc107;
+    color: #000000;
+}
+
+.gold-btn:not(.collapsed) .text-warning {
+    color: #000000 !important;
+}
+
+.platinum-btn:not(.collapsed) {
+    background-color: #0dcaf0;
+    color: #000000;
+}
+
+.platinum-btn:not(.collapsed) .text-info {
+    color: #000000 !important;
+}
+
+.btn-silver-assinar:hover,
+.btn-gold-assinar:hover,
+.btn-platinum-assinar:hover {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.btn-silver-assinar:hover {
+    border-color: white;
+    color: white;
+}
+
+.btn-gold-assinar:hover {
+    border-color: #ffc107;
+    color: #ffc107;
+}
+
+.btn-platinum-assinar:hover {
+    border-color: #0dcaf0;
+    color: #0dcaf0;
+}
+
+/* ========== ACORDEÃO E ÍCONES ========== */
+.accordion-item {
+    border-color: rgba(0, 0, 255, 0.545);
+}
+
+.accordion-button .bi {
+    display: block;
+    margin-top: 5px;
+}
+
+/* ========== TEXTO E LISTAS ========== */
+.txt-svg {
+    font-size: 4rem;
+    margin-top: 6rem;
+    font-weight: 1000;
+}
+
+.lista-final,
+.lista-final:hover {
+    transition: color 2s ease, transform 1s ease;
+}
+
+.lista-final {
+    padding-bottom: 0.2rem;
+}
+
+.lista-final:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.ul-custom {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.li-custom,
+.li-custom:hover::before,
+.li-custom:hover span {
+    position: relative;
+    transition: color 0.3s;
+}
+
+.li-custom {
+    padding-left: 25px;
+}
+
+.li-custom::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.li-custom:hover::before,
+.li-custom:hover span {
+    color: rgba(0, 153, 255, 0.975);
+}
+
+/* ========== IMAGENS E VÍDEOS ========== */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+}
+
+.icon-vid,
+.icon-vid:hover {
+    display: inline-block;
+    transition: color 0.5s ease, transform 0.5s ease;
+    color: white;
+}
+
+.icon-vid {
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+.icon-vid:hover {
+    color: #323fed;
+    transform: scale(1.4);
+}
+
+.btn-videofinal {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.svg-pq {
+    margin-left: 2rem;
+    margin-top: 4.5rem;
+}
+
+.txt-margem {
+    margin-bottom: 6rem;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+
+/* BOTAO NOVO */
+
+.container-sc {
+    width: 1000px;
+    height: auto;
+    /* Mudado de 100% para auto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.container-sc .btn-sc {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 150px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.container-sc .btn-sc a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 400px;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+
+.container-sc .btn-sc:hover a {
+    letter-spacing: 3px;
+    color: #000;
+    font-weight: 1000;
+}
+
+.container-sc .btn-sc a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translate(0);
+    transition: 0.5s;
+    filter: blur(0px);
+}
+
+.container-sc .btn-sc:hover a::before {
+    transform: skewX(45deg) translate(200px);
+}
+
+.container-sc .btn-sc::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+
+.container-sc .btn-sc:hover::before
+
+/*lightup button*/
+    {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.container-sc .btn-sc::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+
+.container-sc .btn-sc:hover::after
+
+/*lightup button*/
+    {
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.container-sc .btn-sc:nth-child(1)::before,
+.container-sc .btn-sc:nth-child(1)::after {
+    background: #2d30ff;
+    box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+        0 0 60px #2db2ff;
+}

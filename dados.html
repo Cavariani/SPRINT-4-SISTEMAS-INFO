@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="icon" href="./images/Misc/favicon-16x16.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robótica Educacional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1C1C1C;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            border-bottom: 2px solid #2935d1;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 9.3%;
+            z-index: 1000;
+            background-color: black;
+        }
+
+        .navbar-brand {
+            display: block;
+            background-color: transparent;
+        }
+
+        h1, h2 {
+            color: #007BFF;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        p, .card-text {
+            color: #BDC3C7;  /* cinza */
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #2C2C2C;  /* cor de fundo um pouco mais clara */
+            border: none;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-placeholder {
+            width: 80%;  /* Aumentando o tamanho do vídeo */
+            height: 0;
+            padding-bottom: 45%;  /* Razão 16:9 ajustada para o novo tamanho */
+            position: relative;
+            margin: 40px auto;  /* Centralizando o vídeo */
+        }
+
+        .video-placeholder iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            padding: 10px;
+            color: #BDC3C7;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="./images/Misc/apheliosLOGO.png" alt="Logo da empresa" height="60">
+        </a>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center fw-bold">Conheça a Aphelios</h1>
+        <h2 class="text-center mb-4 text-white">Mergulhe no mundo da robótica educacional e explore as oportunidades de investimento em nossa apresentação exclusiva.</h2>
+        
+        <div class="video-placeholder mb-5">
+            <iframe src="https://www.youtube.com/embed/dgr2cHhUoa4" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Cartões -->
+            <div class="col-md-12">
+                <!-- Cartão 1 -->
+                <div class="card mb-4" onclick="toggleCard(this)">
+                    <div class="card-body">
+                        <h2>Número de Empresas no Ramo:</h2>
+                        <p>Na nossa região, assistimos ao surgimento de um número crescente de empresas dedicadas à robótica educacional. Nos últimos cinco anos, testemunhamos um aumento significativo, com mais de 30 empresas especializadas nesse setor atualmente operando em nossa área. Esse aumento demonstra o interesse crescente em trazer a tecnologia e a educação mais próximas, capacitando nossos jovens com habilidades valiosas.</p>
+                    </div>
+                </div>
+
+                <!-- Cartão 2 -->
+                <div class="card mb-4" onclick="toggleCard(this)">
+                    <div class="card-body">
+                        <h2>Crescimento Anual do Mercado Citado:</h2>
+                        <p>O mercado de robótica educacional na nossa região apresenta um notável crescimento anual de cerca de 15%. Esse aumento é impulsionado pela crescente conscientização sobre a importância da educação STEM (Ciência, Tecnologia, Engenharia e Matemática) e pelas demandas de habilidades do século 21. À medida que mais escolas e instituições educacionais adotam programas de robótica, a procura por soluções educacionais inovadoras continua a crescer.</p>
+                    </div>
+                </div>
+
+                <!-- Cartão 3 -->
+                <div class="card mb-4" onclick="toggleCard(this)">
+                    <div class="card-body">
+                        <h2>Investimento Total das Empresas:</h2>
+                        <p>As empresas de robótica educacional na nossa região já investiram cerca de 10 milhões de reais nos últimos três anos, demonstrando o compromisso com o desenvolvimento de tecnologias de ponta e a expansão da oferta de produtos e serviços. Esse investimento sustentado é fundamental para o desenvolvimento contínuo do setor e a satisfação das necessidades educacionais em constante evolução.</p>
+                    </div>
+                </div>
+
+                <!-- Cartão 4 -->
+                <div class="card mb-4" onclick="toggleCard(this)">
+                    <div class="card-body">
+                        <h2>Adoção das Escolas com o Tema da Robótica:</h2>
+                        <p>A robótica educacional está ganhando rapidamente a aceitação das escolas em nossa região. Atualmente, mais de 60% das escolas primárias e secundárias já incorporaram programas de robótica em seus currículos. Isso reflete a crescente compreensão dos benefícios que a robótica pode oferecer, incluindo o desenvolvimento de habilidades de resolução de problemas, pensamento crítico e criatividade. As escolas estão percebendo que a robótica é uma ferramenta eficaz para preparar os alunos para um futuro cada vez mais tecnológico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            &copy; Faculdade de Informática e Administração Paulista - PEDRO
+            CAVARIANI - 2023 - 1SIR -
+            APHELIOS ©
+        </footer>
+    </div>
+
+    <!-- Adicionando um pequeno script para lidar com a ação de clique -->
+    <script>
+        function toggleCard(element) {
+            element.classList.toggle('expanded');
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
